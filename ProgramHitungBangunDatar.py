@@ -9,40 +9,6 @@
 #menu_bangun = pilihan bangun datar
 #menu_operasi = pilihan operasi bangun
 
-<<<<<<< HEAD
-def lingkaran(operasi):
-    print('--------------------------------')
-    print('--------------------------------')
-    if operasi==1:
-        #luas lingkaran
-        print('Perhitungan Luas Lingkaran')
-        r=int(input('Masukkan Jari-jari Lingkaran: '))
-        L=3.14159265358979323846*r*r
-        print ('Luas Lingkarannya adalah =' +str(L)+'cm')
-    elif operasi==2:
-        #keliling lingkaran
-        print('Perhitungan Keliling Lingkaran')
-        r=int(input('Masukkan Jari-jari Lingkaran: '))
-        K=3.14159265358979323846*2*r
-        print ('Keliling Lingkarannya adalah ='+str(K)+'cm')
-=======
-def persegi(operasi):
-    print('--------------------------------')
-    print('--------------------------------')
-    if operasi==1:
-        #luas persegi
-        print('Perhitungan Luas Persegi')
-        s=int(input('Masukkan panjang sisi persegi: '))
-        L = s*s
-        print ('Luas Perseginya adalah ='+str(L)+'cm')
-    elif operasi==2:
-        #kelliling persegi
-        print('Perhitungan Keliling Persegi')
-        s=int(input('Masukkan panjang sisi persegi: '))
-        K = 4*s
-        print ('Keliling Perseginya adalah ='+str(K)+'cm')
-    else :
-        print('Masukan Salah, silahakan ulangi')
 def persegipanjang(operasi):
     print('--------------------------------')
     print('--------------------------------')
@@ -60,9 +26,45 @@ def persegipanjang(operasi):
         l=int(input('Masukkan Lebar persegi panjang :'))
         K=2*(p+l)
         print ('Keliling Persegi panjangnya adalah ='+str(K)+'cm') 
->>>>>>> 2e3d2d7af5d7be46073b487c3dfa30fd54d62e7b
     else :
         print('Masukan Salah, silahakan ulangi')
+
+def persegi(operasi):
+    print('--------------------------------')
+    print('--------------------------------')
+    if operasi==1:
+        #luas persegi
+        print('Perhitungan Luas Persegi')
+        s=int(input('Masukkan panjang sisi persegi: '))
+        L = s*s
+        print ('Luas Perseginya adalah ='+str(L)+'cm')
+    elif operasi==2:
+        #kelliling persegi
+        print('Perhitungan Keliling Persegi')
+        s=int(input('Masukkan panjang sisi persegi: '))
+        K = 4*s
+        print ('Keliling Perseginya adalah ='+str(K)+'cm')
+    else :
+        print('Masukan Salah, silahakan ulangi')
+
+def lingkaran(operasi):
+    print('--------------------------------')
+    print('--------------------------------')
+    if operasi==1:
+        #luas lingkaran
+        print('Perhitungan Luas Lingkaran')
+        r=int(input('Masukkan Jari-jari Lingkaran: '))
+        L=3.14159265358979323846*r*r
+        print ('Luas Lingkarannya adalah =' +str(L)+'cm')
+    elif operasi==2:
+        #keliling lingkaran
+        print('Perhitungan Keliling Lingkaran')
+        r=int(input('Masukkan Jari-jari Lingkaran: '))
+        K=3.14159265358979323846*2*r
+        print ('Keliling Lingkarannya adalah ='+str(K)+'cm')
+    else :
+        print('Masukan Salah, silahakan ulangi')
+
 
 print('[KALKULATOR LUAS DAN KELILING BANGUN DATAR]')
 print('-------------------------------------------')
@@ -78,3 +80,12 @@ print('1. Luas')
 print('2. Keliling')
 print('3. Keluar')
 menu_operasi=int(input('Masukkan jenis perhitungan yang diinginkan :'))
+
+if menu_bangun==1:
+    persegipanjang(menu_operasi)
+elif menu_bangun==2:
+    persegi(menu_operasi)
+elif menu_bangun==3:
+    lingkaran(menu_operasi)
+else :
+    pass
