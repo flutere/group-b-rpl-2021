@@ -9,6 +9,42 @@
 #menu_bangun = pilihan bangun datar
 #menu_operasi = pilihan operasi bangun
 
+def persegi(operasi):
+    print('--------------------------------')
+    print('--------------------------------')
+    if operasi==1:
+        #luas persegi
+        print('Perhitungan Luas Persegi')
+        s=int(input('Masukkan panjang sisi persegi: '))
+        L = s*s
+        print ('Luas Perseginya adalah ='+str(L)+'cm')
+    elif operasi==2:
+        #kelliling persegi
+        print('Perhitungan Keliling Persegi')
+        s=int(input('Masukkan panjang sisi persegi: '))
+        K = 4*s
+        print ('Keliling Perseginya adalah ='+str(K)+'cm')
+    else :
+        print('Masukan Salah, silahakan ulangi')
+def persegipanjang(operasi):
+    print('--------------------------------')
+    print('--------------------------------')
+    if operasi==1:
+        #luas persegi panjang
+        print('Perhitungan Luas Persegi Panjang')
+        p=int(input('Masukan panjang persegi panjang :'))
+        l=int(input('Masukkan Lebar persegi panjang :'))
+        L =p*l
+        print ('Luas Persegi panjangnya adalah =' + str(L)+'cm')
+    elif operasi==2:
+        #keliling persegi panjang
+        print('Perhitungan Keliling Persegi Panjang')
+        p=int(input('Masukan panjang persegi panjang :'))
+        l=int(input('Masukkan Lebar persegi panjang :'))
+        K=2*(p+l)
+        print ('Keliling Persegi panjangnya adalah ='+str(K)+'cm') 
+    else :
+        print('Masukan Salah, silahakan ulangi')
 
 print('[KALKULATOR LUAS DAN KELILING BANGUN DATAR]')
 print('-------------------------------------------')
