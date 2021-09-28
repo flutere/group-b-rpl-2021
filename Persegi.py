@@ -24,6 +24,25 @@ def persegi(operasi):
         print ('Keliling Perseginya adalah ='+str(K)+'cm')
     else :
         print('Masukan Salah, silahakan ulangi')
+def persegipanjang(operasi):
+    print('--------------------------------')
+    print('--------------------------------')
+    if operasi==1:
+        #luas persegi panjang
+        print('Perhitungan Luas Persegi Panjang')
+        p=int(input('Masukan panjang persegi panjang :'))
+        l=int(input('Masukkan Lebar persegi panjang :'))
+        L =p*l
+        print ('Luas Persegi panjangnya adalah =' + str(L)+'cm')
+    elif operasi==2:
+        #keliling persegi panjang
+        print('Perhitungan Keliling Persegi Panjang')
+        p=int(input('Masukan panjang persegi panjang :'))
+        l=int(input('Masukkan Lebar persegi panjang :'))
+        K=2*(p+l)
+        print ('Keliling Persegi panjangnya adalah ='+str(K)+'cm') 
+    else :
+        print('Masukan Salah, silahakan ulangi')
 
 print('[KALKULATOR PERSEGI]')
 print('-------------------------------------------')
