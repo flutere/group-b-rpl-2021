@@ -9,6 +9,23 @@
 #menu_bangun = pilihan bangun datar
 #menu_operasi = pilihan operasi bangun
 
+def lingkaran(operasi):
+    print('--------------------------------')
+    print('--------------------------------')
+    if operasi==1:
+        #luas lingkaran
+        print('Perhitungan Luas Lingkaran')
+        r=int(input('Masukkan Jari-jari Lingkaran: '))
+        L=3.14159265358979323846*r*r
+        print ('Luas Lingkarannya adalah =' +str(L)+'cm')
+    elif operasi==2:
+        #keliling lingkaran
+        print('Perhitungan Keliling Lingkaran')
+        r=int(input('Masukkan Jari-jari Lingkaran: '))
+        K=3.14159265358979323846*2*r
+        print ('Keliling Lingkarannya adalah ='+str(K)+'cm')
+    else :
+        print('Masukan Salah, silahakan ulangi')
 
 print('[KALKULATOR LUAS DAN KELILING BANGUN DATAR]')
 print('-------------------------------------------')
